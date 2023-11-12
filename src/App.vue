@@ -7,13 +7,18 @@
     <div class="menu"></div>
     <div class="container">
       <!-- <router-view></router-view> -->
-      <Button></Button>
+      <Button :disabled="false" @click="btn"></Button>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import Button from '@/views/Button/index.vue'
+
+const btn = () => {
+  alert('btn')
+}
+
 </script>
 
 <style lang="scss" scoped>
