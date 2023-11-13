@@ -5,7 +5,7 @@ interface Options {
 }
 
 const Options = {
-  viewportWidth: 1920,
+  viewportWidth: 375,
 }
 
 export const PostCssToViewport = (options: Options = Options): Plugin => {
